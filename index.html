@@ -968,9 +968,9 @@ let TASKS=[];
 // ═══════════════════════════════════════════════════
 // GOOGLE SHEETS INTEGRATION
 // ═══════════════════════════════════════════════════
-const GS_SPREADSHEET_ID='YOUR_SPREADSHEET_ID';
-const GS_CLIENT_EMAIL='YOUR_CLIENT_EMAIL';
-const GS_PRIVATE_KEY='YOUR_PRIVATE_KEY_HERE';
+const GS_SPREADSHEET_ID='1lhfKjp0bh0EHyYniZ_yXWKF3CNPruuhiEm36tsS9HBM';
+const GS_CLIENT_EMAIL='hi-780@eighth-epigram-491904-t6.iam.gserviceaccount.com';
+const GS_PRIVATE_KEY='-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDWvLZ/Lh4cI8gu\nO0dUGHthzaYvBLi7mVPvOm5BOcE4bZphhbOW066cCvsP6DELbCDjZp/iaDMsLWAR\nlpJM/F6emjuFZdtXMG93uSEIyRYDFGHwrZZVYGTURRd/ECZoiXoE03Fqns4zZV/l\nRtG2rLi16pIe1YZuiydPOlljyPuR/4BI5+DusPe2STAzhqCwbprz2/8GoJWMm38S\njNgs/fOcbUiJ/z53su2TuYGGtjwJhZNy+bVCy2o5kmjsXLPRg8avwsOBdwyBU78n\n1Gwa+TwvOIBi0snYpAt0Z2uA64V7W9ncZSchxhItXyDPHnkzFcZN6ud73dr8hn3i\nB0vHc9CVAgMBAAECggEAMOIezU7rTc6beGLINw2nsLkG9rclcpdR8yijBrgmEzlo\nJoEwQ8qGekFJq/JYj9gamIm5JepAk/L0ZqyXO21MAODtYc2xI+UDywZazcww9ZyD\nOy3ZBjB+Y5Ai7Cr6A1wgac7Uh8gE+tA+B0ya2vHwzoDKqLhE9Q86cJ/Az6VmF3Le\nuQt/NQXibb01NsWEsghWpgWtFWT6B8uMm0HNrv99xemBqwYb4tPUEelKwf+X7yp4\nkfB+dFuFXOkSRrWbAX3lWabaUt03JwqzxN70OL6oUrHtUQqcsqtgrWDeGtHelakL\nHq6jRWNa/QcKo9z9cPlVsECkoXJWcVDNAmdQKanJQQKBgQDs52nzaCAtNk/4VUuV\nQjyTUaD/IcDicwy1+FPGHL6vzqykiH1tLf25wHIcwKmoNnzaibX26cu1WctXFvBW\no16OxElfHhfWJPzTNs1FF+ukqP2jXdSaIR+vYACaC657o77fkiXTKihmGcNI+zjn\n/lcFF/s6XWpnRlQQLYR33QnmJQKBgQDoC+FYOwdWSUabjAZf6dyzs4WA6e9Oq5Lc\n0mMPec7tOl3CNuBd8asQI2yD07gWCJBwoQo3/h+cS2kegEN6awdCzn0U8gIWoPHs\n0u9rYT4ibExDQVxTsfTDtYSzkmAa7ICiXs7zzlHferf5ESUNLstw9q5nd7tEA8Un\nAVPr8GudsQKBgQCEaRuo9mv1mUO9Uz85n5nn5VoM/7qlVxSlqLR6KJrT/Lo2BCvG\nmEwWRGADfhPVdw71vr670RUQua2TcbjHU+yH82HnDhTYljfRffHhSmtkzydk5g7s\nTtM83HW5pAnUBUOsBi2qBwgpeQDTi8bUtC3DJRJAHvJX4tEdcbN2o07jGQKBgCFt\nfLP6JO9wNOS5gj2U8f9NMEFG8ftySgDXqf+Tu5R/IPyWbTH7W3pCsCI5gL5j03L2\nMAOq7yDT2DvVnGLpQi2Ek45N4rEh1FgadvUQGCRbV40kwEkqTKlY39oCjyexxEIf\nyE5k/XRlOFV/+8dvY01NrAgpvmdo56Db1xwZEVexAoGAaPOoXbwh+YESkn2mui5M\ns3sKC+qf2w/QPBFW6pksm/gsTMlNxzbCiInYP8N8AwmE4KhJQ+4PX4U4dOFWylvu\nmGgnUs8Ul4qdAiD3X1qaGE2Qtuvkp5UKzB0USoaMahQEfKK6lJdhdi/rlQ2ZNGI6\nDNPM28p/6b22JVJMCSTg3aI=\n-----END PRIVATE KEY-----\n';
 let _gsToken=null,_gsTokenExp=0;
 
 function _pemToBuf(pem){
