@@ -315,7 +315,7 @@ input,select,button,textarea{font-family:'Nunito',sans-serif}
       <div class="mod-card"><div class="mci">💸</div><div class="mcl">Thu Chi</div><div class="mcs">Giao dịch & báo cáo tháng</div></div>
       <div class="mod-card"><div class="mci">🎯</div><div class="mcl">Mục tiêu</div><div class="mcs">Nhà, xe, trả góp</div></div>
       <div class="mod-card"><div class="mci">🏦</div><div class="mcl">Tài sản & Nợ</div><div class="mcs">Tài khoản & vay mượn</div></div>
-      <div class="mod-card"><div class="mci">✅</div><div class="mcl">Giao việc</div><div class="mcs">Todo gia đình</div></div>
+      <div class="mod-card"><div class="mci">✅</div><div class="mcl">Việc cần làm</div><div class="mcs">Todo cá nhân</div></div>
       <div class="mod-card"><div class="mci">✏️</div><div class="mcl">Nhập mới</div><div class="mcs">Thêm giao dịch</div></div>
     </div>
     <button class="cta" onclick="goPage('login')">Vào hệ thống →</button>
@@ -357,7 +357,7 @@ input,select,button,textarea{font-family:'Nunito',sans-serif}
         <button class="ntab" onclick="showTab('txn')">💸 Thu Chi</button>
         <button class="ntab" onclick="showTab('goals')">🎯 Mục tiêu</button>
         <button class="ntab" onclick="showTab('wealth')">🏦 Tài sản & Nợ</button>
-        <button class="ntab" onclick="showTab('tasks')">✅ Giao việc</button>
+        <button class="ntab" onclick="showTab('tasks')">✅ Việc cần làm</button>
         <button class="ntab" onclick="showTab('entry')">✏️ Nhập mới</button>
         <button class="ntab" onclick="showTab('log')">📋 Lịch sử</button>
       </div>
@@ -376,7 +376,7 @@ input,select,button,textarea{font-family:'Nunito',sans-serif}
     <!-- ══ DASHBOARD ══ -->
     <div id="tab-dashboard" class="tpane">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:10px">
-        <div class="thead" style="margin-bottom:0"><h1>Dashboard</h1><p>Tổng quan tài chính gia đình · cập nhật realtime</p></div>
+        <div class="thead" style="margin-bottom:0"><h1>Dashboard</h1><p>Tổng quan tài chính cá nhân · cập nhật realtime</p></div>
         <div id="dash-filter-bar" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
           <div class="yr-toggle">
             <button class="yrbtn on" id="yr25" onclick="setDashYear('2025')">2025</button>
@@ -603,7 +603,7 @@ input,select,button,textarea{font-family:'Nunito',sans-serif}
 
     <!-- ══ TASKS ══ -->
     <div id="tab-tasks" class="tpane hidden">
-      <div class="thead"><h1>Giao việc</h1><p>Giao dịch · Theo dõi · Hoàn thành</p></div>
+      <div class="thead"><h1>Việc cần làm</h1><p>Cá nhân · Theo dõi · Hoàn thành</p></div>
       <div class="g4" style="margin-bottom:18px" id="task-stats"></div>
       <div style="display:flex;gap:8px;margin-bottom:16px;align-items:center">
         <div style="display:flex;gap:6px;flex:1;overflow-x:auto;scrollbar-width:none;padding-bottom:2px" id="task-filter-row">
@@ -644,12 +644,12 @@ input,select,button,textarea{font-family:'Nunito',sans-serif}
           <select class="fselect" id="en-cat">
             <option>🥦 Ăn uống - Đi chợ</option><option>🍜 Ăn uống - Ăn ngoài</option>
             <option>🏠 Nhà cửa - Tiền nhà</option><option>🛒 Nhà cửa - Mua sắm</option>
-            <option>🔧 Nhà cửa - Phí DV</option><option>🎓 Con - Học phí</option>
-            <option>👶 Con - Mua sắm</option><option>🍼 Con - Ăn uống</option>
+            <option>🔧 Nhà cửa - Phí DV</option><option>☕ Cà phê - Giải khát</option>
+            <option>🎮 Giải trí - Game</option><option>📱 Công nghệ - Điện thoại</option>
             <option>🎁 Hiếu hỉ - Biếu tặng</option><option>✈️ Hưởng thụ - Du lịch</option>
             <option>🚗 Đi lại - Di chuyển</option><option>💊 Sức khoẻ - Bảo hiểm</option>
-            <option>🏦 Ngân hàng - Rút tiền</option><option>👨 Tiền chồng chuyển vào</option>
-            <option>👩 Tiền vợ chuyển vào</option><option>💰 Thu khác</option><option>💳 Chi Khác</option>
+            <option>🏦 Ngân hàng - Rút tiền</option><option>💼 Lương - Thu nhập chính</option>
+            <option>📈 Đầu tư - Lãi suất</option><option>💰 Thu khác</option><option>💳 Chi Khác</option>
           </select>
           <label class="flabel">Mô tả</label>
           <input class="finput" type="text" id="en-desc" placeholder="VD: Đi chợ sáng thứ 2..."/>
@@ -734,7 +734,7 @@ input,select,button,textarea{font-family:'Nunito',sans-serif}
 
 
     <div id="tab-log" class="tpane hidden">
-      <div class="thead"><h1>📋 Lịch sử</h1><p>Toàn bộ hoạt động của gia đình · realtime</p></div>
+      <div class="thead"><h1>📋 Lịch sử</h1><p>Toàn bộ hoạt động cá nhân · realtime</p></div>
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:20px;padding:12px;background:#fff;border-radius:14px;border:1px solid #e4e0d8">
         <select id="log-user-f" onchange="renderLog()" style="padding:7px 10px;border-radius:10px;border:1px solid var(--aborder);font-size:12px;font-weight:700;color:#555;background:#fff">
           <option value="all">👥 Tất cả</option><option value="Hazel">💎 Hazel</option>
@@ -763,7 +763,7 @@ input,select,button,textarea{font-family:'Nunito',sans-serif}
       <button class="mnbtn on" id="mn-dashboard" onclick="showTab('dashboard')"><span class="mni">📊</span>Dashboard</button>
       <button class="mnbtn" id="mn-txn" onclick="showTab('txn')"><span class="mni">💸</span>Thu Chi</button>
       <button class="mnbtn" id="mn-goals" onclick="showTab('goals')"><span class="mni">🎯</span>Mục tiêu</button>
-      <button class="mnbtn" id="mn-tasks" onclick="showTab('tasks')"><span class="mni">✅</span>Giao việc</button>
+      <button class="mnbtn" id="mn-tasks" onclick="showTab('tasks')"><span class="mni">✅</span>Việc làm</button>
       <button class="mnbtn" id="mn-entry" onclick="showTab('entry')"><span class="mni">✏️</span>Nhập</button>
       <button class="mnbtn" id="mn-log" onclick="showTab('log')"><span class="mni">📋</span>Lịch sử</button>
     </div>
@@ -877,13 +877,13 @@ input,select,button,textarea{font-family:'Nunito',sans-serif}
   <div class="modal">
     <button class="mclose" onclick="closeModal('modal-task')">×</button>
     <h2>✅ Thêm công việc</h2>
-    <div class="msub">Giao việc cho thành viên gia đình</div>
+    <div class="msub">Thêm việc cần làm của bạn</div>
     <label class="flabel">Tên công việc</label>
     <input class="finput" id="tk-title" placeholder="VD: Nộp học phí cho con"/>
     <div class="frow">
-      <div><label class="flabel">Giao cho</label>
+      <div><label class="flabel">Người thực hiện</label>
         <select class="fselect" id="tk-assign">
-          <option>💎 Hazel</option><option>👤 Người thân</option>
+          <option>💎 Hazel</option><option>👤 Người khác</option>
         </select>
       </div>
       <div><label class="flabel">Ưu tiên</label>
@@ -895,8 +895,8 @@ input,select,button,textarea{font-family:'Nunito',sans-serif}
     <div class="frow">
       <div><label class="flabel">Danh mục</label>
         <select class="fselect" id="tk-cat">
-          <option>💰 Tài chính</option><option>🏠 Nhà cửa</option><option>👶 Con cái</option>
-          <option>🛒 Mua sắm</option><option>📋 Giấy tờ</option><option>✈️ Du lịch</option><option>🔧 Sửa chữa</option><option>Khác</option>
+          <option>💰 Tài chính</option><option>🏠 Nhà cửa</option><option>💼 Công việc</option>
+          <option>🛒 Mua sắm</option><option>📋 Giấy tờ</option><option>✈️ Du lịch</option><option>🔧 Sửa chữa</option><option>🎯 Mục tiêu</option><option>Khác</option>
         </select>
       </div>
       <div><label class="flabel">Hạn chót</label><input class="finput" type="date" id="tk-due"/></div>
@@ -926,12 +926,12 @@ input,select,button,textarea{font-family:'Nunito',sans-serif}
     <select class="fselect" id="e-cat">
       <option>🥦 Ăn uống - Đi chợ</option><option>🍜 Ăn uống - Ăn ngoài</option>
       <option>🏠 Nhà cửa - Tiền nhà</option><option>🛒 Nhà cửa - Mua sắm</option>
-      <option>🔧 Nhà cửa - Phí DV</option><option>🎓 Con - Học phí</option>
-      <option>👶 Con - Mua sắm</option><option>🍼 Con - Ăn uống</option>
+      <option>🔧 Nhà cửa - Phí DV</option><option>☕ Cà phê - Giải khát</option>
+      <option>🎮 Giải trí - Game</option><option>📱 Công nghệ - Điện thoại</option>
       <option>🎁 Hiếu hỉ - Biếu tặng</option><option>✈️ Hưởng thụ - Du lịch</option>
       <option>🚗 Đi lại - Di chuyển</option><option>💊 Sức khoẻ - Bảo hiểm</option>
-      <option>🏦 Ngân hàng - Rút tiền</option><option>👨 Tiền chồng chuyển vào</option>
-      <option>👩 Tiền vợ chuyển vào</option><option>💰 Thu khác</option><option>💳 Chi Khác</option>
+      <option>🏦 Ngân hàng - Rút tiền</option><option>💼 Lương - Thu nhập chính</option>
+      <option>📈 Đầu tư - Lãi suất</option><option>💰 Thu khác</option><option>💳 Chi Khác</option>
     </select>
     <label class="flabel">Mô tả</label>
     <input class="finput" type="text" id="e-desc" placeholder="VD: Đi chợ sáng thứ 2..."/>
@@ -2150,7 +2150,7 @@ function showEntryTab(tab){
 // ═══════════════════════════
 var _saoKeText='';
 var _saoKeTxList=[];
-var _SAOKE_CATS=["Ăn uống - Đi chợ","Ăn uống - Ăn ngoài","Nhà cửa - Tiền nhà","Nhà cửa - Mua sắm","Nhà cửa - Phí DV","Con - Học phí","Con - Mua sắm","Con - Ăn uống","Hiếu hỉ - Biếu tặng","Hưởng thụ","Hưởng thụ - Du lịch","Đi lại - Di chuyển","Sức khoẻ - Bảo hiểm","Ngân hàng - Rút tiền","Tiền chồng chuyển vào","Tiền vợ chuyển vào","Thu khác","Chi Khác"];
+var _SAOKE_CATS=["Ăn uống - Đi chợ","Ăn uống - Ăn ngoài","Nhà cửa - Tiền nhà","Nhà cửa - Mua sắm","Nhà cửa - Phí DV","Cà phê - Giải khát","Giải trí - Game","Công nghệ - Điện thoại","Hiếu hỉ - Biếu tặng","Hưởng thụ","Hưởng thụ - Du lịch","Đi lại - Di chuyển","Sức khoẻ - Bảo hiểm","Ngân hàng - Rút tiền","Lương - Thu nhập chính","Đầu tư - Lãi suất","Thu khác","Chi Khác"];
 
 function toggleApiKeyPopup(){
   var existing=document.getElementById('saoke-apikey-popup');
